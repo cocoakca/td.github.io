@@ -1,0 +1,393 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-02-05 11:32:25
+ * @LastEditTime: 2021-04-22 12:14:46
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /JadeShare/todayHome.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>今日和田玉</title>
+  <!-- <style>
+    * {
+      margin: 0;
+      padding: 0;
+      vertical-align: middle;
+    }
+
+    body {
+      background: #414141;
+    }
+
+    .topImg {
+      width: 375px;
+    }
+
+    .type {
+      padding-top: 26.37px;
+      width: 375px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .type .title {
+      font-size: 11px;
+
+    }
+
+    .type .title-line {
+      width: 21px;
+      height: 1px;
+      background: #859D7B;
+      margin-top: 5.86px;
+    }
+
+    .type .type-list {
+      width: 325px;
+      display: flex;
+      flex-direction: row;
+      margin: 0px 25px;
+      margin-top: 17.3px;
+      margin-bottom: 20.51px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .type .type-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 152.34px;
+      background: #FFFFFF;
+      border-radius: 1px;
+      border: 1px solid #979797;
+      margin-bottom: 20.51px;
+    }
+
+    .type .type-item .type-icon {
+      width: 29.3px;
+      height: 29.3px;
+      margin-top: 11.72px;
+    }
+
+    .type .type-item .type-item-title {
+      font-size: 9px;
+      margin-top: 3.52px;
+    }
+
+    .type .type-item .type-item-line {
+      width: 21px;
+      height: 1px;
+      background: #859D7B;
+      margin-top: 2.64px;
+    }
+
+    .type .type-item .type-item-subTitle {
+      font-size: 5px;
+      margin-top: 3.52px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 11.72px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #333333;
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 27.25px;
+      padding-left: 38.96px;
+      padding-right: 34.86px;
+      color: #fff;
+      padding-bottom: 29.3px;
+    }
+
+    .bottom .bottom-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bottom .bottom-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bottom .bottom-title {
+      font-size: 5px;
+    }
+
+    .bottom .bottom-content {
+      font-size: 5px;
+      margin-top: 3.52px;
+      width: 182.52px;
+    }
+
+    .bottom .bottom-icon {
+      width: 46.58px;
+      height: 46.58px;
+      margin-top: 7.62px;
+      margin-right: 6.45px;
+    }
+  </style> -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      vertical-align: middle;
+    }
+
+    body {
+      background: #414141;
+    }
+
+    .topImg {
+      width: 100.00vw;
+    }
+
+    .type {
+      padding-top: 7.03vw;
+      width: 100.00vw;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .type .title {
+      font-size: 2.93vw;
+      font-weight: bolder;
+    }
+
+    .type .title-line {
+      width: 5.60vw;
+      height: 0.27vw;
+      background: #859D7B;
+      margin-top: 1.56vw;
+    }
+
+    .type .type-list {
+      width: 86.67vw;
+      display: flex;
+      flex-direction: row;
+      margin: 0.00vw 6.67vw;
+      margin-top: 4.61vw;
+      margin-bottom: 5.47vw;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .type .type-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 35.28vw;
+      background: #FFFFFF;
+      border-radius: 0.27vw;
+      border: 0.15vw solid #979797;
+      margin-bottom: 5.47vw;
+      padding: 0vw 2.67vw;
+    }
+
+
+    .type .type-item .type-icon {
+      width: 7.81vw;
+      height: 7.81vw;
+      margin-top: 3.13vw;
+    }
+
+    .type .type-item .type-item-title {
+      font-size: 2.40vw;
+      margin-top: 0.94vw;
+      font-weight: bolder;
+    }
+
+    .type .type-item .type-item-line {
+      width: 5.60vw;
+      height: 0.27vw;
+      background: #859D7B;
+      margin-top: 0.70vw;
+    }
+
+    .type .type-item .type-item-subTitle {
+      font-size: 2.13vw;
+      margin-top: 1vw;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 3.13vw;
+
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #333333;
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 7.27vw;
+      padding-left: 6.67vw;
+      padding-right: 9.30vw;
+      color: #fff;
+      padding-bottom: 7.81vw;
+    }
+
+    .bottom .bottom-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bottom .bottom-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bottom .bottom-title-left {
+      font-size: 2.67vw;
+      font-weight: bolder;
+    }
+
+    .bottom .bottom-title-right {
+      font-size: 2.13vw;
+    }
+
+    .bottom .bottom-content {
+      font-size: 2.13vw;
+      margin-top: 0.94vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+    }
+
+    .bottom .bottom-left-content {
+      width: 54.67vw;
+    }
+
+    .bottom .bottom-icon {
+      width: 16.00vw;
+      height: 16.00vw;
+      margin-top: 7.62px;
+      margin-right: 1.72vw;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <img class="topImg" src="../img/top-01.png">
+    <div class="type">
+      <div class="title">今日和田玉权益说明</div>
+      <div class="title-line"></div>
+      <div class="type-list">
+        <!-- <div class="type-item" v-for="item,index in list" :key="index">
+          <image class="type-icon" :src="item.icon" mode="aspectFill"></image>
+          <div class="type-item-title">
+            {{item.title}}
+          </div>
+          <div class="type-item-line"></div>
+          <div class="type-item-subTitle" v-html="item.subTitle">
+          </div>
+        </div> -->
+        <div class="type-item">
+          <image class="type-icon" src="../img/01.png" mode="aspectFill"></image>
+          <div class="type-item-title">作品证书</div>
+          <div class="type-item-line"></div>
+          <div class="type-item-subTitle">
+            <p>已上传、发布的作品，可打印相应作品证书，证书具有收藏价值。</p>
+          </div>
+        </div>
+        <div class="type-item">
+          <image class="type-icon" src="../img/02.png" mode="aspectFill"></image>
+          <div class="type-item-title">上传作品</div>
+          <div class="type-item-line"></div>
+          <div class="type-item-subTitle">
+            <p>平台内可免费上传、发布作品，无作品数量限制。</p>
+          </div>
+        </div>
+        <div class="type-item">
+          <image class="type-icon" src="../img/03.png" mode="aspectFill"></image>
+          <div class="type-item-title">个人名片</div>
+          <div class="type-item-line"></div>
+          <div class="type-item-subTitle">
+            <p>提供多种模板，您可根据个人喜好，选择不同的模板样式进行制作。</p>
+          </div>
+        </div>
+        <div class="type-item">
+          <image class="type-icon" src="../img/04.png" mode="aspectFill"></image>
+          <div class="type-item-title">品牌形象</div>
+          <div class="type-item-line"></div>
+          <div class="type-item-subTitle">
+            <p>可通过平台打造特有品牌形象，展示专属宣传页面。</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="bottom-left" ref="btmContent">
+        <div class="bottom-title-left">关于今日和田玉</div>
+        <div class="bottom-content bottom-left-content">
+          <p>今日和田玉是一家专注于为商家、工作室、工艺师、收藏家及机构服务的平台，成立于2021年，总部位于北京。</p>
+          <p>今日和田玉以理性、公正为基本价值观，服务于广大和田玉商家，目前是和田玉行业内最具影响力的平台之一。</p>
+          <p>今日和田玉致力于帮助商家树立品牌形象，打印作品证书，生成个人名片，为商家、工作室、工艺师、收藏家及机构提供一个专业的宣传平台。</p>
+        </div>
+      </div>
+      <div class="bottom-right" :style="'height:'+btmHeight">
+        <div class="bottom-title-right">扫描下载今日和田玉APP</div>
+        <img class="bottom-icon" src="../img/bottom.png" alt="">
+      </div>
+    </div>
+    <!-- <div class="address">公司地址：北京市海淀区杏石口路50号中间建筑2区1901室，电话(010)62730010</div> -->
+  </div>
+</body>
+<!-- vue -->
+<script type="text/javascript" src="../js/vue.min.js"></script>
+<script>
+  const app = new Vue({
+    el: "#app",
+    data: {
+      btmHeight: 'auto',
+      // list: [{
+      //     icon: '../img/01.png',
+      //     title: "作品证书",
+      //     subTitle: '<p>已上传、发布的作品，可打印相应作品证书，证书具有收藏价值。</p>',
+      //   },
+      //   {
+      //     icon: '../img/02.png',
+      //     title: "上传作品",
+      //     subTitle: '<p>平台内可免费上传、发布作品，无作品数量限制。</p>',
+
+      //   }, {
+      //     icon: '../img/03.png',
+      //     title: "个人名片",
+      //     subTitle: '<p>提供多种模板，您可根据个人喜好，选择不同的模板样式进行制作。</p>',
+
+      //   },
+      //   {
+      //     icon: '../img/04.png',
+      //     title: "品牌形象",
+      //     subTitle: '<p>可通过平台打造特有品牌形象，展示专属宣传页面。</p>',
+      //   }
+      // ]
+    },
+    mounted() {
+      this.$nextTick(() => {
+        this.btmHeight = window.getComputedStyle(this.$refs.btmContent).height;
+      })
+    },
+  })
+</script>
+
+</html>
